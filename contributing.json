@@ -1,0 +1,511 @@
+{
+    "rules": [
+        {
+            "categoryNumber": "1",
+            "categoryName": "Updating npm packages",
+            "rules": [
+                {
+                    "ruleNumber": "1.1",
+                    "ruleName": "When updating an npm package, use strict versioning, ie. an exact version number in the package.json.",
+                    "ruleDescription": "Strict versioning means npm will install only the exact version we specify.",
+                    "examples": [
+                        {
+                            "Good": "\"react\": \"16.13.1\"",
+                            "Bad": "\"react\": \"^16.13.1\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "categoryNumber": "2",
+            "categoryName": "Typescript / JavaScript",
+            "rules": [
+                {
+                    "ruleNumber": "2.1",
+                    "ruleName": "Use undefined instead of null",
+                    "ruleDescription": "(2.1.1) We do not use `null` in our project, so please remember to use `undefined` instead.",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.2",
+                    "ruleName": "Leave comments for your comments",
+                    "ruleDescription": "Leave comments for commented out lines of code indicating WHY it is commented and WHEN it will be",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.3",
+                    "ruleName": "Do not leave useless comments. Use comments to describe complicated logic or describe things that are hard to read in the code.",
+                    "ruleDescription": "Try to write readable code. Developers spend most of their time reading someone else's code rather than writing it. Leaving your code in unreadable state or adding redundant comments can contribute to \"developer fatigue\". Try to keep things clean.",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.4",
+                    "ruleName": "Follow functional programming paradigm. Try to avoid changing variables which are not in the scope. Also be mindful of passed arrays or objects not to modify initially passed references.",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.5",
+                    "ruleName": "Use functional programming approaches to permutate or retrieve data from arrays and objects",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.6",
+                    "ruleName": "Look up existing utils files before adding new helper functions",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.7",
+                    "ruleName": "Do not hardcode values (\"magic\" values). Use configuration or constants instead.",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.8",
+                    "ruleName": "Try to match returned variable names to function names.",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.9",
+                    "ruleName": "Try to use object destruction when you need to assign variables to the values of object properties",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.10",
+                    "ruleName": "Do not overuse object destruction. Sometimes it does not makes sense to create those variables",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.11",
+                    "ruleName": "Name your variables with prefix \"is\" or \"has\" or \"can\" if the variable is a boolean",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.12",
+                    "ruleName": "Use all caps python case for configuration constants or global constants in the project",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.13",
+                    "ruleName": "Use Object Literal Property Value Shorthand when possible",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.14",
+                    "ruleName": "Use conditional (ternary) operator for basic variable assignments instead of IF statements",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.15",
+                    "ruleName": "Use || operator if you need to default a variable value",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.15.1",
+                    "ruleName": "Use || operator if there is a priority value assignment",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.16",
+                    "ruleName": "Use ?? Nullish Coalescing operator if empty string, 0 or false are valid values",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.17",
+                    "ruleName": "Try to use simple conditional (ternary) operators. Try to avoid nesting them into one statement.",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.18",
+                    "ruleName": "Avoid using conditional (ternary) operators when logic could be simplified or re-written with || operator",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.19",
+                    "ruleName": "Avoid using ternary operator to find min and max values out of two given ones. Use Math.min or Math.max instead",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.20",
+                    "ruleName": "Use Array.includes() method if you need to compare string variable against multiple values",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.21",
+                    "ruleName": "Give descriptive and meaningful names to your variables",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.22",
+                    "ruleName": "Do not use \"var\". Use \"let\" or \"const\" instead",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.23",
+                    "ruleName": "Use string templating where it makes code more readable",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.24",
+                    "ruleName": "Use existing for..of loop when you need to loop through array elements",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.25",
+                    "ruleName": "Avoid using Array.forEach() for looping or data permutation. Use it for executing a function per item instead",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.26",
+                    "ruleName": "Use Array.forEach() to execute logic for every element. But be sure to explicitely pass the element into a function since \"forEach\" passes 2 arguments into its argument function: \"element\" and \"index\".",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.27",
+                    "ruleName": "Give descriptive names for loop variables. Try to match those names to the array variable name.",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.28",
+                    "ruleName": "Return early",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.29",
+                    "ruleName": "Use promise chaining if your promises could be handled using the same catch() method in case of an error",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.30",
+                    "ruleName": "Try to have as few function calls as possible in your code",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.31",
+                    "ruleName": "Try to avoid using destruction and defaulting in the function arguments",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.32",
+                    "ruleName": "If a function has more than 2-3 arguments consider passing an object instead",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.33",
+                    "ruleName": "Try to avoid useless function wrappers",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.34",
+                    "ruleName": "Try to name your arguments to simplify the code where possible",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.35",
+                    "ruleName": "Use optional chaining when accessing property deep in a chain to avoid extracting a property of an undefined value",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.36",
+                    "ruleName": "When possible, avoid using optional chaining when trying to call a method which might not exist",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.37",
+                    "ruleName": "Use optional chaining when when accessing properties with an expression",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.38",
+                    "ruleName": "Always use optional chaining for accessing deeply nested hardcoded constants",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.39",
+                    "ruleName": "Use async/await syntax with promises",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.40",
+                    "ruleName": "Use await-of helper to avoid writing try catch blocks with async/await",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.41",
+                    "ruleName": "Do not use async without await",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.42",
+                    "ruleName": "Don't await unrelated API calls in the same function",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.43",
+                    "ruleName": "Avoid using the `any` type when possible",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "2.44",
+                    "ruleName": "Use absolute imports where possible",
+                    "ruleDescription": "",
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "categoryNumber": "3",
+            "categoryName": "CSS / Styling",
+            "rules": [
+                {
+                    "ruleNumber": "3.1",
+                    "ruleName": "Use `@emotion/styled` for styling components instead of BEM stylesheets or inline styles",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "3.2",
+                    "ruleName": "Use Design Tokens for colors, spacing, border radius, border width, opacity, shadow, font etc.",
+                    "ruleDescription": "To ensure consistency across the platform, please use design tokens from either globlal, reference or both. Example 1:  Example 2: ` Double check with your designer, post in #g-frontend or #design-talk if you are unsure. The team may want to update our design tokens if the value is used in multiple places!",
+                    "examples": [
+                        {
+                            "exampleNumber": "1",
+                            "exampleDescription": "To use the color `red` from the design tokens, you would use `color: ${global.reference.color.content.accent.red};`"
+                        },
+                        {
+                            "exampleNumber": "2",
+                            "exampleDescription": "To use add a `4.0rem` padding to a div, you would use `padding: ${global.reference.spacing.xxl};"
+                        }
+                    ]
+                },
+                {
+                    "ruleNumber": "3.2.1",
+                    "ruleName": "If you need to use a value that is not available as a design token, use rem units instead of px when possible",
+                    "ruleDescription": "Double check with your designer, post in #g-frontend or #design-talk if you are unsure. The team may want to update our design tokens if the value is used in multiple places!",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "3.3",
+                    "ruleName": "Leverage our [Bit component library](https://bit.cloud/roserocket/design) over Chromatic / Storybook components when available.",
+                    "ruleDescription": "",
+                    "examples": [
+                        {
+                            "exampleNumber": "1",
+                            "exampleDescription": "A commonly seen mistake is using `@roserocket/Typography` instead of the new bit component `@roserocket/design.Typography`"
+                        }
+                    ]
+                },
+                {
+                    "ruleNumber": "3.4",
+                    "ruleName": "Leverage our [Bit component library](https://bit.cloud/roserocket/design) over Chromatic / Storybook components when available.",
+                    "ruleDescription": "",
+                    "examples": [
+                        {
+                            "exampleNumber": "1",
+                            "exampleDescription": "`import TextInput from '@roserocket/design.text-input'` instead of: `import TextInput from '@roserocket/design.text-input/dist/text-input'`"
+                        }
+                    ]
+                },
+                {
+                    "ruleNumber": "3.5",
+                    "ruleName": "Do not use !important in your CSS rules",
+                    "ruleDescription": "`!important` is an anti-pattern in CSS world. It adds a dimension of \"magic\" to your code that can lead developers to a rabbit-hole trying to find why an element is styled one way even though CSS is clearly defined. It can get even harder to debug and manage when multiple `!important` rules are starting to overlap.",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "3.6",
+                    "ruleName": "Avoid using inline styles",
+                    "ruleDescription": "",
+                    "examples": [
+                        {
+                            "exampleNumber": "1",
+                            "exampleDescription": "This is incorrect: \n`<div style=\"padding: ${global.spacing.lg}\"> Some content </div>"
+                        },
+                        {
+                            "exampleNumber": "2",
+                            "exampleDescription": "This is correct: \nconst MyStyledDiv= styled.div`padding: ${global.spacing.lg};`; \n// Usage \n<MyStyledDiv> Some content </MyStyledDiv>"
+                        }
+                    ]
+                },
+                {
+                    "ruleNumber": "3.7",
+                    "ruleName": "Avoid using four-properties shorthands",
+                    "ruleDescription": "This type of shorthands is difficult to memorize and notice while debugging which often causes unintentional bugs in css rules",
+                    "examples": [
+                        {
+                            "exampleNumber": "1",
+                            "exampleDescription": "This is incorrect: \nconst MyStyledContainer = styled.div`\npadding: 4rem 3rem 0 1rem;`;"
+                        },
+                        {
+                            "exampleNumber": "2",
+                            "exampleDescription": "This is correct: \nconst MyStyledContainer = styled.div`\npadding-top: 4rem;\npadding-right: 3rem;\npadding-left: 1rem;"
+                        }
+                    ]
+                },
+                {
+                    "ruleNumber": "3.8",
+                    "ruleName": "When programming with z-index refer to the enum Z_INDEXES before hardcoding the value",
+                    "ruleDescription": "",
+                    "examples": [
+                        {
+                            "exampleNumber": "1",
+                            "exampleDescription": "This is incorrect: \nconst StyledCurrencySection = styled(StyledSection)`\nz-index: 900;`;"
+                        },
+                        {
+                            "exampleNumber": "2",
+                            "exampleDescription": "This is correct: \nconst StyledCurrencySection = styled(StyledSection)`\nz-index: ${Z_INDEXES.popover};`;"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "categoryNumber": "4",
+            "categoryName": "React",
+            "rules": [
+                {
+                    "ruleNumber": "4.1",
+                    "ruleName": "Functions internal to a component should be prefixed with '\\_'. When possible prefix with `on` for additional clarity",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "4.2",
+                    "ruleName": "Try to keep variable names the same which you use to pass into component properties.",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "4.3",
+                    "ruleName": "When using defaults for functions, object and arrays in props, reference them to a local const (`const emptyObject = {};`, `const emptyArray = [];`, `const emptyFunction = () => {};`) instead of `{}`, `[]` or `() => {}` to avoid unnecessary re-renders.",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "4.4",
+                    "ruleName": "Write variables first and then functions",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "4.5",
+                    "ruleName": "Keep boolean args first. True can be passed simply by specifying the name of the property",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "4.6",
+                    "ruleName": "Consider splitting your component into multiple smaller ones if you find that component is growing to be too big or you have many IF statements within.",
+                    "ruleDescription": "Smaller components are more re-usable and easier to extend if you need to change things up. Less nested IF components lead to a more readable and manageable code as well.",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "4.7",
+                    "ruleName": "Try to create components as generic as possible. Avoid hardcoded business workflows/APIs within subcomponents; use a Wrapper component for business logic, states and connections and pass down only the necessary props.",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "4.8",
+                    "ruleName": "Allow developers to overwrite default component behavior if necessary.",
+                    "ruleDescription": "There are times when developers need to overwrite or enhance the components' default behavior, even though the element is designed to do a specific thing. This approach makes code much more flexible and guides developers towards proper code writing instead of spawning multiple IF statements or extra arguments within the component.",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "4.9",
+                    "ruleName": "Do not use {} in the code for string which do not require computations",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "4.10",
+                    "ruleName": "Avoid using Inline Anonymous Functions. Try to use component functions instead and try to match the name of functions",
+                    "ruleDescription": "We are no longer doing it for performance purposes but for readability purposes. Keeping structure of all components the same and easy way to read JSX.",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "4.11",
+                    "ruleName": "Avoid spreading variables into components. Be explicit with what is passed in",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "4.12",
+                    "ruleName": "Avoid passing business logic data models into smaller or generic components. Try to pass basic value properties (unless it is a component wrapper).",
+                    "ruleDescription": "",
+                    "examples": []
+                }
+            ]
+        },
+        {
+            "categoryNumber": "5",
+            "categoryName": "React Hooks",
+            "rules": [
+                {
+                    "ruleNumber": "5.1",
+                    "ruleName": "Do not use React.memo() for every component. Only use it for components which truly need performance optimization OR this performance is visible enough to the user OR could be traced through profiling tools.",
+                    "ruleDescription": "For more information, checkout the answer on [\"#14000 Make stateless components \"Pure\" by default in React 17\"](https://github.com/facebook/react/issues/14000) Do not forget to use \"shallowEqual\" if returning value is an object or an array",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "5.2",
+                    "ruleName": "DO use \"useMemo\" when trying to use the same \"useSelector\" across multiple components",
+                    "ruleDescription": "Do not forget to use \"shallowEqual\" if returning value is an object or an array",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "5.3",
+                    "ruleName": "You need to use \"useCallback()\" if you pass callbacks into memo-ized component.",
+                    "ruleDescription": "",
+                    "examples": []
+                },
+                {
+                    "ruleNumber": "5.4",
+                    "ruleName": "Import React from \"react\" in every file where you use JSX. This import should be first in the file.",
+                    "ruleDescription": "",
+                    "examples": []
+                }
+            ]
+        }
+    ]
+}
