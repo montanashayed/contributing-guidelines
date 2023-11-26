@@ -40,18 +40,6 @@
                     "examples": []
                 },
                 {
-                    "ruleNumber": "2.4",
-                    "ruleName": "Follow functional programming paradigm. Try to avoid changing variables which are not in the scope. Also be mindful of passed arrays or objects not to modify initially passed references.",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
-                    "ruleNumber": "2.5",
-                    "ruleName": "Use functional programming approaches to permutate or retrieve data from arrays and objects",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
                     "ruleNumber": "2.6",
                     "ruleName": "Look up existing utils files before adding new helper functions",
                     "ruleDescription": "",
@@ -64,24 +52,6 @@
                     "examples": []
                 },
                 {
-                    "ruleNumber": "2.8",
-                    "ruleName": "Try to match returned variable names to function names.",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
-                    "ruleNumber": "2.9",
-                    "ruleName": "Try to use object destruction when you need to assign variables to the values of object properties",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
-                    "ruleNumber": "2.10",
-                    "ruleName": "Do not overuse object destruction. Sometimes it does not makes sense to create those variables",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
                     "ruleNumber": "2.11",
                     "ruleName": "Name your variables with prefix \"is\" or \"has\" or \"can\" if the variable is a boolean",
                     "ruleDescription": "",
@@ -90,12 +60,6 @@
                 {
                     "ruleNumber": "2.12",
                     "ruleName": "Use all caps python case for configuration constants or global constants in the project",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
-                    "ruleNumber": "2.13",
-                    "ruleName": "Use Object Literal Property Value Shorthand when possible",
                     "ruleDescription": "",
                     "examples": []
                 },
@@ -120,12 +84,6 @@
                 {
                     "ruleNumber": "2.16",
                     "ruleName": "Use ?? Nullish Coalescing operator if empty string, 0 or false are valid values",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
-                    "ruleNumber": "2.17",
-                    "ruleName": "Try to use simple conditional (ternary) operators. Try to avoid nesting them into one statement.",
                     "ruleDescription": "",
                     "examples": []
                 },
@@ -202,36 +160,6 @@
                     "examples": []
                 },
                 {
-                    "ruleNumber": "2.30",
-                    "ruleName": "Try to have as few function calls as possible in your code",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
-                    "ruleNumber": "2.31",
-                    "ruleName": "Try to avoid using destruction and defaulting in the function arguments",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
-                    "ruleNumber": "2.32",
-                    "ruleName": "If a function has more than 2-3 arguments consider passing an object instead",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
-                    "ruleNumber": "2.33",
-                    "ruleName": "Try to avoid useless function wrappers",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
-                    "ruleNumber": "2.34",
-                    "ruleName": "Try to name your arguments to simplify the code where possible",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
                     "ruleNumber": "2.35",
                     "ruleName": "Use optional chaining when accessing property deep in a chain to avoid extracting a property of an undefined value",
                     "ruleDescription": "",
@@ -239,7 +167,7 @@
                 },
                 {
                     "ruleNumber": "2.36",
-                    "ruleName": "When possible, avoid using optional chaining when trying to call a method which might not exist",
+                    "ruleName": "Avoid using optional chaining when trying to call a method which might not exist",
                     "ruleDescription": "",
                     "examples": []
                 },
@@ -338,11 +266,11 @@
                 {
                     "ruleNumber": "3.4",
                     "ruleName": "Leverage our [Bit component library](https://bit.cloud/roserocket/design) over Chromatic / Storybook components when available.",
-                    "ruleDescription": "",
+                    "ruleDescription": "When importing a component from Bit.dev, do not include `/dist/...` in the import path",
                     "examples": [
                         {
                             "exampleNumber": "1",
-                            "exampleDescription": "`import TextInput from '@roserocket/design.text-input'` instead of: `import TextInput from '@roserocket/design.text-input/dist/text-input'`"
+                            "exampleDescription": "Use `import TextInput from '@roserocket/design.text-input'` instead of: `import TextInput from '@roserocket/design.text-input/dist/text-input'`"
                         }
                     ]
                 },
@@ -410,12 +338,6 @@
                     "examples": []
                 },
                 {
-                    "ruleNumber": "4.2",
-                    "ruleName": "Try to keep variable names the same which you use to pass into component properties.",
-                    "ruleDescription": "",
-                    "examples": []
-                },
-                {
                     "ruleNumber": "4.3",
                     "ruleName": "When using defaults for functions, object and arrays in props, reference them to a local const (`const emptyObject = {};`, `const emptyArray = [];`, `const emptyFunction = () => {};`) instead of `{}`, `[]` or `() => {}` to avoid unnecessary re-renders.",
                     "ruleDescription": "",
@@ -449,12 +371,6 @@
                     "ruleNumber": "4.8",
                     "ruleName": "Allow developers to overwrite default component behavior if necessary.",
                     "ruleDescription": "There are times when developers need to overwrite or enhance the components' default behavior, even though the element is designed to do a specific thing. This approach makes code much more flexible and guides developers towards proper code writing instead of spawning multiple IF statements or extra arguments within the component.",
-                    "examples": []
-                },
-                {
-                    "ruleNumber": "4.9",
-                    "ruleName": "Do not use {} in the code for string which do not require computations",
-                    "ruleDescription": "",
                     "examples": []
                 },
                 {
